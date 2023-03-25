@@ -4,7 +4,7 @@ function removebioslogo() {
 
 function addAppIcon(text) {
   let icon = document.createElement("button");
-  icon.innerHtml = text;
+  icon.innerHTML = text;
   document.body.appendChild(icon);
 }
 
