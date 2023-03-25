@@ -8,7 +8,7 @@ function addAppIcon(text) {
   document.body.appendChild(icon);
 }
 
-function MainKernel() {
+function mainKernel() {
   removebioslogo();
   addAppIcon("Kernel Debugging..")
 }
