@@ -6,7 +6,7 @@ function Boot() {
   try {
     console.log("booting up...");
     InitMemManagement();
-    MainKernel();
+    mainKernel();
     return;
   } catch (e) {
     document.write("Error has occoured.<br>Error Message : " + e.Message);
@@ -14,5 +14,4 @@ function Boot() {
   }
 }
 
-
-Boot();
+document.addEventListener("DOMContentLoaded", Boot);
