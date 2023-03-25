@@ -9,7 +9,7 @@ function Boot() {
     mainKernel();
     return;
   } catch (e) {
-    document.write("Error has occoured.<br>Error Message : " + e.Message);
+    document.write("Error has occoured.<br>Error Message : " + e.Message + "<br>Stack : " + e.Stack);
     console.log("boot error!");
   }
 }
