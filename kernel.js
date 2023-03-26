@@ -33,4 +33,10 @@ function mainKernel() {
   });
   changeLine();
   addBtn("Kernel Debugging..");
+  addBtn("Run JS NativeApplication").addEventListener("click", function() {
+    var url = prompt("Enter JS Native App Link.", "https://adev531.github.io/WebOS/Apps/Welcome.js");
+    let script = document.createElement("script");
+    script.src = url;
+    document.body.appendChild(script);
+  });
 }
