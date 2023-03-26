@@ -22,14 +22,13 @@ function changeLine() {
 }
 
 function SearchValue(searchting) {
-  alert(searchting);
   window.open("https://www.google.com/search?q=" + searchting, '_blank');
 }
 
 function mainKernel() {
   removebioslogo();
   useSearchBar();
-  addBtn("Search").addEventListener("Click", function() {
+  addBtn("Search").addEventListener("click", function() {
     SearchValue(document.getElementById('searchBar').value);
   });
   changeLine();
