@@ -1,1 +1,1 @@
-alert("CPU: WEBPROCESSER100, MEM USAGE: " + document.getElementsByTagName('script').length);
+alert("CPU: WEBPROCESSER100, MEM USAGE: " + document.getElementsByTagName('script').length * 2 + "%");
