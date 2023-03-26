@@ -1,1 +1,1 @@
-alert("Not Useable currently.");
+alert("CPU: WEBPROCESSER100, MEM USAGE: " + document.getElementsByTagName('script').length);
