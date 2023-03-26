@@ -1,4 +1,4 @@
-let kernelzone = document.createElement("center");
+let kernelzone = document.body;
 
 function removebioslogo() {
   document.getElementById("bootlogo").remove();
@@ -19,8 +19,6 @@ function useSearchBar() {
   kernelzone.appendChild(search);
 }
 
-function use
-
 function changeLine() {
   kernelzone.appendChild(document.createElement("br"));
 }
@@ -30,7 +28,6 @@ function SearchValue(searchting) {
 }
 
 function mainKernel() {
-  document.body.appendChild(kernelzone);
   removebioslogo();
   useSearchBar();
   addBtn("Search").addEventListener("click", function() {
@@ -39,7 +36,7 @@ function mainKernel() {
   changeLine();
   addBtn("Kernel Debugging..");
   addBtn("Run JS NativeApplication").addEventListener("click", function() {
-    var url = prompt("Enter JS Native App Link.", "https://adev531.github.io/WebOS/Apps/Welcome.js");
+    var url = prompt("Enter JS Native App Link.", "https://adev531.github.io/WebOS/apps/welcome.js");
     let script = document.createElement("script");
     script.src = url;
     document.body.appendChild(script);
