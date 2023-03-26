@@ -35,9 +35,13 @@ function mainKernel() {
     SearchValue(document.getElementById('searchBar').value);
   });
   changeLine();
-  addBtn("Kernel Debugging..");
-  addBtn("Run JS NativeApplication").addEventListener("click", function() {
-    var url = prompt("Enter JS Native App Link.", "https://adev531.github.io/WebOS/Apps/Welcome.js");
+  addBtn("Kernel Debugging..").addEventListener("click", function() {
+    let script = document.createElement("script");
+    script.src = "https://adev531.github.io/WebOS/apps/kernel/debugger.js";
+    document.body.appendChild(script);
+  });
+  addBtn("Run JS NativeApplication..").addEventListener("click", function() {
+    var url = prompt("Enter JS Native App Link.", "https://adev531.github.io/WebOS/apps/welcome.js");
     let script = document.createElement("script");
     script.src = url;
     document.body.appendChild(script);
