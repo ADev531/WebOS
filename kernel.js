@@ -12,8 +12,8 @@ function addBtn(text) {
 
 function useSearchBar() {
   let search = document.createElement("input");
-  search.placeholder = "Type text to search...";`
-  search.id = "searchBar"
+  search.placeholder = "Type text to search...";
+  search.id = "searchBar";
   document.body.appendChild(search);
 }
 
@@ -32,5 +32,5 @@ function mainKernel() {
     SearchValue(document.getElementById('searchBar').value);
   });
   changeLine();
-  addBtn("Kernel Debugging..")
+  addBtn("Kernel Debugging..");
 }
