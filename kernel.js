@@ -22,6 +22,7 @@ function changeLine() {
 }
 
 function SearchValue(searchting) {
+  alert(searchting);
   window.open("https://www.google.com/search?q=" + searchting, '_blank');
 }
 
