@@ -1,3 +1,5 @@
+let kernelzone = document.createElement("center");
+
 function removebioslogo() {
   document.getElementById("bootlogo").remove();
 }
@@ -6,7 +8,7 @@ function addBtn(text) {
   let icon = document.createElement("button");
   icon.innerHTML = text;
   icon.style.border = "2px solid #e7e7e7";
-  document.body.appendChild(icon);
+  kernelzone.appendChild(icon);
   return icon;
 }
 
@@ -14,11 +16,13 @@ function useSearchBar() {
   let search = document.createElement("input");
   search.placeholder = "Type text to search...";
   search.id = "searchBar";
-  document.body.appendChild(search);
+  kernelzone.appendChild(search);
 }
 
+function use
+
 function changeLine() {
-  document.body.appendChild(document.createElement("br"));
+  kernelzone.appendChild(document.createElement("br"));
 }
 
 function SearchValue(searchting) {
@@ -26,6 +30,7 @@ function SearchValue(searchting) {
 }
 
 function mainKernel() {
+  document.body.appendChild(kernelzone);
   removebioslogo();
   useSearchBar();
   addBtn("Search").addEventListener("click", function() {
