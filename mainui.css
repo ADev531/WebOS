@@ -12,3 +12,10 @@ button {
     text-align: center;
     padding: 10px;
 }
+
+input {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+}
