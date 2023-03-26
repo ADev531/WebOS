@@ -21,15 +21,15 @@ function changeLine() {
   document.body.appendChild(document.createElement("br"));
 }
 
-function Search(searchting) {
+function SearchValue(searchting) {
   window.open("https://www.google.com/search?q=" + searchting, '_blank');
 }
 
 function mainKernel() {
   removebioslogo();
   useSearchBar();
-  addBtn("Search!").addEventListener("Click", function() {
-    Search(document.getElementById('searchBar').value);
+  addBtn("Search").addEventListener("Click", function() {
+    SearchValue(document.getElementById('searchBar').value);
   });
   changeLine();
   addBtn("Kernel Debugging..")
