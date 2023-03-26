@@ -8,7 +8,6 @@ function Boot() {
   try {
     console.log("booting up...");
     InitMemManagement();
-    function getScriptName() {
     let timer = setTimeout(function() {
       if (!kernelExecuted) {
         mainKernel();
