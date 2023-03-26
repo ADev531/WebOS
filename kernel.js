@@ -15,7 +15,13 @@ function useSearchBar() {
   document.body.appendChild(search);
 }
 
+function changeLine() {
+  document.body.appendChild(document.createElement("br"));
+}
+
 function mainKernel() {
   removebioslogo();
+  useSearchBar();
+  changeLine();
   addIcon("Kernel Debugging..")
 }
