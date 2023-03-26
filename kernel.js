@@ -2,7 +2,7 @@ function removebioslogo() {
   document.getElementById("bootlogo").remove();
 }
 
-function addIcon(text) {
+function addBtn(text) {
   let icon = document.createElement("button");
   icon.innerHTML = text;
   icon.style.border = "2px solid #e7e7e7";
@@ -22,6 +22,7 @@ function changeLine() {
 function mainKernel() {
   removebioslogo();
   useSearchBar();
+  addBtn("Search!");
   changeLine();
-  addIcon("Kernel Debugging..")
+  addBtn("Kernel Debugging..")
 }
