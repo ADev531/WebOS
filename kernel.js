@@ -11,7 +11,8 @@ function addBtn(text) {
 
 function useSearchBar() {
   let search = document.createElement("input");
-  search.placeholder = "Type text to search...";
+  search.placeholder = "Type text to search...";`
+  search.id = "searchBar"
   document.body.appendChild(search);
 }
 
@@ -19,10 +20,14 @@ function changeLine() {
   document.body.appendChild(document.createElement("br"));
 }
 
+function Search() {
+  
+}
+
 function mainKernel() {
   removebioslogo();
   useSearchBar();
-  addBtn("Search!");
+  addBtn("Search!").onclick = "Search(document.getElementById('searchBar'));"
   changeLine();
   addBtn("Kernel Debugging..")
 }
