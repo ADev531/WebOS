@@ -20,14 +20,14 @@ function changeLine() {
   document.body.appendChild(document.createElement("br"));
 }
 
-function Search() {
-  
+function Search(searchting) {
+  window.open("https://www.google.com/search?q=" + searchting, '_blank');
 }
 
 function mainKernel() {
   removebioslogo();
   useSearchBar();
-  addBtn("Search!").onclick = "Search(document.getElementById('searchBar'));"
+  addBtn("Search!").onclick = "Search(document.getElementById('searchBar').value);"
   changeLine();
   addBtn("Kernel Debugging..")
 }
