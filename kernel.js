@@ -7,6 +7,7 @@ function addBtn(text) {
   icon.innerHTML = text;
   icon.style.border = "2px solid #e7e7e7";
   document.body.appendChild(icon);
+  return icon;
 }
 
 function useSearchBar() {
@@ -27,7 +28,9 @@ function Search(searchting) {
 function mainKernel() {
   removebioslogo();
   useSearchBar();
-  addBtn("Search!").onclick = "Search(document.getElementById('searchBar').value);"
+  addBtn("Search!").addEventListener("Click", function() {
+    Search(document.getElementById('searchBar').value);
+  });
   changeLine();
   addBtn("Kernel Debugging..")
 }
